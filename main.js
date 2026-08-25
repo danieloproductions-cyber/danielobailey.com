@@ -46,6 +46,7 @@ const navLinks = document.querySelector('.nav-links');
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   const isOpen = navLinks.classList.contains('open');
+  navToggle.setAttribute('aria-expanded', String(isOpen));
   const spans = navToggle.querySelectorAll('span');
   if (isOpen) {
     spans[0].style.transform = 'rotate(45deg) translate(3px, 3px)';
@@ -59,6 +60,7 @@ navToggle.addEventListener('click', () => {
 navLinks.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
     const spans = navToggle.querySelectorAll('span');
     spans[0].style.transform = '';
     spans[1].style.transform = '';
@@ -73,41 +75,29 @@ const aboutBtn = document.getElementById('about-btn');
 const modal = document.getElementById('about-modal');
 const modalClose = document.getElementById('modal-close');
 
-aboutBtn.addEventListener('click', () => {
+function openModal() {
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
-});
+  modalClose.focus();
+}
 
-modalClose.addEventListener('click', () => {
+function closeModal() {
   modal.classList.remove('open');
   document.body.style.overflow = '';
-});
+  aboutBtn.focus();
+}
+
+aboutBtn.addEventListener('click', openModal);
+modalClose.addEventListener('click', closeModal);
 
 modal.addEventListener('click', (e) => {
   if (e.target === modal) {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
+    closeModal();
   }
 });
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && modal.classList.contains('open')) {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
+    closeModal();
   }
 });
-
-// ============================================
-// Hero parallax on scroll
-// ============================================
-
-const heroContent = document.querySelector('.hero-content');
-if (heroContent) {
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    if (scrollY < window.innerHeight) {
-      heroContent.style.transform = `translateY(${scrollY * 0.12}px)`;
-      heroContent.style.opacity = 1 - scrollY / (window.innerHeight * 0.8);
-    }
-  }, { passive: true });
-}

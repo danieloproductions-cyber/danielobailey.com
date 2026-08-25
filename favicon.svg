@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Daniel O' Bailey">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#182240"/>
+      <stop offset="1" stop-color="#080a14"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0dfa0"/>
+      <stop offset="1" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="13" fill="url(#bg)"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="10.5" fill="none" stroke="#c9a84c" stroke-opacity=".45" stroke-width="1.5"/>
+  <path d="M21 17.5h11.4c8.9 0 14.6 5.6 14.6 14.5S41.3 46.5 32.4 46.5H21V17.5Zm7.7 6.6v15.8h3.3c4.5 0 7.2-3 7.2-7.9s-2.7-7.9-7.2-7.9h-3.3Z" fill="url(#gold)"/>
+</svg>
