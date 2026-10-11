@@ -26,10 +26,10 @@
   --line: #e4ded3;
   --line-strong: #d6cec1;
 
-  /* Accent — dusty rose, used sparingly */
-  --accent: #c15f78;
-  --accent-deep: #a8475f;
-  --accent-tint: #f4e6ea;
+  /* Accent — turquoise blue, used sparingly */
+  --accent: #0c8a96;
+  --accent-deep: #06717c;
+  --accent-tint: #e2f1f2;
 
   /* Fonts */
   --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
