@@ -1,14 +1,27 @@
 {
   "name": "Daniel O' Bailey",
   "short_name": "D. O' Bailey",
-  "description": "Writer, editor, and communications producer from Madisonville, Louisiana.",
+  "description": "Essays, reviews, and interviews from Daniel O' Bailey, a writer, editor, and musician in Madisonville, Louisiana.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080a14",
-  "theme_color": "#080a14",
+  "background_color": "#fed850",
+  "theme_color": "#54c2d7",
   "icons": [
-    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
-    { "src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" },
-    { "src": "/favicon-32.png", "type": "image/png", "sizes": "32x32" }
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
   ]
 }
