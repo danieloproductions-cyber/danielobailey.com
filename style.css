@@ -1,5 +1,5 @@
 /* ============================================
-   Daniel O' Bailey | Personal Site
+   Daniel Bailey | Personal Site
    Built on the Scanlan's Magazine system:
    cream paper, ink, one red, hairline rules.
    Helvetica/Arial heads, Georgia text. No webfonts.
@@ -86,7 +86,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--red); outline-o
 .brand {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: clamp(40px, 11.6vw, 172px);
+  font-size: clamp(48px, 14.3vw, 202px);
   line-height: .94;
   letter-spacing: -.065em;
   margin-left: -.012em;
