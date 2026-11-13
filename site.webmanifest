@@ -4,8 +4,8 @@
   "description": "Essays, reviews, and interviews from Daniel O' Bailey, a writer, editor, and musician in Madisonville, Louisiana.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fed850",
-  "theme_color": "#54c2d7",
+  "background_color": "#f4f0e6",
+  "theme_color": "#f4f0e6",
   "icons": [
     {
       "src": "/favicon.svg",

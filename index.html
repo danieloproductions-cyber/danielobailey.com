@@ -37,12 +37,9 @@
   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#54c2d7">
+  <meta name="theme-color" content="#f4f0e6">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="/img/daniel-o-bailey.webp" imagesrcset="/img/daniel-o-bailey-480.webp 480w, /img/daniel-o-bailey.webp 880w" imagesizes="(max-width: 820px) 300px, 400px" fetchpriority="high">
+  <link rel="preload" as="image" href="/img/daniel-o-bailey.webp" imagesrcset="/img/daniel-o-bailey-480.webp 480w, /img/daniel-o-bailey.webp 880w" imagesizes="(max-width: 700px) 90vw, 500px" fetchpriority="high">
   <link rel="stylesheet" href="/style.css">
 
   <script type="application/ld+json">
@@ -77,6 +74,7 @@
         "Editor",
         "Musician",
         "Festival Organizer",
+        "Magazine Publisher",
         "Social Media Lead",
         "Communications Producer"
       ],
@@ -123,7 +121,8 @@
         "https://soundcloud.com/danielobailey",
         "https://maudlinhouse.net/author/daniel-o-bailey/",
         "https://www.bloodhoneylit.com/daniel-bailey-bio",
-        "https://gonzofest.net/participant/daniel-obailey/"
+        "https://gonzofest.net/participant/daniel-obailey/",
+        "https://scanlansmagazine.com/"
       ]
     },
     {
@@ -261,55 +260,47 @@
 </head>
 <body>
 
-  <a href="#latest" class="skip-link">Skip to content</a>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track"><span>Writer, editor, musician</span><span>Madisonville, Louisiana</span><span>Creative Nonfiction Editor at Blood+Honey</span><span>Co-Organizer of GonzoFest 2026</span><span>New essays and stories on Substack</span><span>Published in Maudlin House</span><span>Writer, editor, musician</span><span>Madisonville, Louisiana</span><span>Creative Nonfiction Editor at Blood+Honey</span><span>Co-Organizer of GonzoFest 2026</span><span>New essays and stories on Substack</span><span>Published in Maudlin House</span></div>
-  </div>
-
-  <!-- Masthead -->
-  <nav class="nav" id="nav" aria-label="Primary">
-    <a href="/" class="nav-logo">Daniel O' Bailey <small>Stories from Louisiana and beyond</small></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-      <span></span>
-      <span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <a href="#latest">Latest</a>
-      <a href="#writing">Work</a>
-      <a href="#hire">Services</a>
-      <a href="#music">Music</a>
-      <a href="#contact" class="nav-cta">Hire Me</a>
-    </div>
-  </nav>
+  <header class="masthead container">
+    <div class="brandrow"><h1 class="brand"><a href="/" aria-label="Daniel O' Bailey, home">Daniel O&rsquo; Bailey</a></h1></div>
+    <div class="issueband"><span class="status">New: The Curse of Lono, reviewed</span><span>Writer. Editor. Musician.</span><span>Madisonville, Louisiana</span></div>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <div class="nav-links" id="nav-links">
+        <a href="#latest">Latest</a>
+        <a href="#writing">Work</a>
+        <a href="#hire">Services</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <span class="edition">Stories with a pulse. Facts that hold.</span>
+    </nav>
+  </header>
 
   <main id="main">
 
   <!-- Hero -->
-  <header class="hero">
+  <section class="hero" aria-labelledby="hero-title">
     <div class="container hero-inner">
       <div class="hero-typed">
-        <span class="hero-date">Madisonville, Louisiana</span>
-        <h1 class="hero-name"><span>Daniel</span> <span class="hero-name-pop">O' Bailey</span></h1>
-        <ul class="hero-subtitle" aria-label="What Daniel does">
-          <li>Writer</li>
-          <li>Editor</li>
-          <li>Musician</li>
-        </ul>
+        <p class="eyebrow">Essays, reviews, interviews, and music</p>
+        <h2 class="hero-name" id="hero-title"><span>Writer.</span><span>Editor.</span><span>Musician.</span></h2>
         <p class="hero-tagline">I turn interviews, public research, music, and culture into clear stories people can feel and understand.</p>
+        <p class="hero-intro">Creative Nonfiction Editor at Blood+Honey, Co-Organizer of GonzoFest 2026, and editor and publisher of the forthcoming Scanlan&rsquo;s Magazine.</p>
         <div class="hero-actions">
-          <a href="#latest" class="btn btn--accent">Read the Latest</a>
-          <a href="#contact" class="btn btn--dark">Work With Me</a>
-          <button class="btn btn--ghost" id="about-btn" type="button" aria-haspopup="dialog">About</button>
+          <a href="#latest" class="btn">Read the latest</a>
+          <a href="#contact" class="btn">Work with me</a>
+          <button class="btn" id="about-btn" type="button" aria-haspopup="dialog">About</button>
         </div>
+        <p class="smallnote">Bylines appear as Daniel O' Bailey and Daniel Bailey.</p>
       </div>
       <figure class="hero-photo">
-        <img src="/img/daniel-o-bailey.webp" srcset="/img/daniel-o-bailey-480.webp 480w, /img/daniel-o-bailey.webp 880w" sizes="(max-width: 820px) 300px, 400px" alt="Portrait of Daniel O' Bailey, writer, editor and musician" width="880" height="1100" fetchpriority="high" decoding="async">
-        <figcaption>Writer at large</figcaption>
-        <a class="hero-badge" href="https://gonzofest.net/participant/daniel-obailey/" target="_blank" rel="noopener">GonzoFest 2026 Co&#8209;Organizer</a>
+        <div class="archive-kicker"><span>Daniel O' Bailey</span><span>Madisonville, La.</span></div>
+        <img src="/img/daniel-o-bailey.webp" srcset="/img/daniel-o-bailey-480.webp 480w, /img/daniel-o-bailey.webp 880w" sizes="(max-width: 700px) 90vw, 500px" alt="Portrait of Daniel O' Bailey, writer, editor and musician" width="880" height="1100" fetchpriority="high" decoding="async">
+        <figcaption class="caption"><strong>Daniel O' Bailey.</strong> Writer, editor, and musician. Co-Organizer of <a href="https://gonzofest.net/participant/daniel-obailey/" target="_blank" rel="noopener">GonzoFest 2026</a>.</figcaption>
       </figure>
     </div>
-  </header>
+  </section>
 
   <!-- About Modal -->
   <div class="modal-overlay" id="about-modal">
@@ -322,12 +313,12 @@
         <p>For employers and collaborators, the practical value is simple: Daniel can interview, research, draft, edit, coordinate, produce, revise, and deliver under pressure while keeping the voice alive and the facts clean.</p>
         <div class="modal-bios">
           <h3>Bios &amp; Profiles</h3>
-          <a href="https://danielbaileyoffical.substack.com/" target="_blank" rel="noopener me">Substack &rarr;</a>
-          <a href="https://www.bloodhoneylit.com/daniel-bailey-bio" target="_blank" rel="noopener">Blood+Honey Literary Magazine &rarr;</a>
-          <a href="https://maudlinhouse.net/author/daniel-o-bailey/" target="_blank" rel="noopener">Maudlin House &rarr;</a>
-          <a href="https://gonzofest.net/participant/daniel-obailey/" target="_blank" rel="noopener">GonzoFest &rarr;</a>
-          <a href="https://www.instagram.com/danielbaileyoffical/" target="_blank" rel="noopener me">Instagram &rarr;</a>
-          <a href="https://soundcloud.com/danielobailey" target="_blank" rel="noopener me">SoundCloud &rarr;</a>
+          <a href="https://danielbaileyoffical.substack.com/" target="_blank" rel="noopener me">Substack</a>
+          <a href="https://www.bloodhoneylit.com/daniel-bailey-bio" target="_blank" rel="noopener">Blood+Honey Literary Magazine</a>
+          <a href="https://maudlinhouse.net/author/daniel-o-bailey/" target="_blank" rel="noopener">Maudlin House</a>
+          <a href="https://gonzofest.net/participant/daniel-obailey/" target="_blank" rel="noopener">GonzoFest</a>
+          <a href="https://www.instagram.com/danielbaileyoffical/" target="_blank" rel="noopener me">Instagram</a>
+          <a href="https://soundcloud.com/danielobailey" target="_blank" rel="noopener me">SoundCloud</a>
         </div>
       </div>
     </div>
@@ -339,7 +330,7 @@
       <div class="latest-box">
         <div class="latest-head">
           <h2 id="latest-title">The Latest</h2>
-          <a href="https://danielbaileyoffical.substack.com/" target="_blank" rel="noopener">All essays and stories on Substack &rarr;</a>
+          <a href="https://danielbaileyoffical.substack.com/" target="_blank" rel="noopener">All essays and stories on Substack</a>
         </div>
         <div class="latest-grid">
           <article class="latest-feature">
@@ -398,7 +389,7 @@
         </div>
         <div class="latest-foot">
           <p><strong>Earlier:</strong> <a href="https://danielbaileyoffical.substack.com/p/behind-the-scenes-gonzofest-2">Behind the Scenes: GonzoFest #2</a>, <a href="https://danielbaileyoffical.substack.com/p/gonzofest-behind-the-scenes">GonzoFest Behind the Scenes</a>, and <a href="https://danielbaileyoffical.substack.com/p/disappear-near-me">disappear near me</a>.</p>
-          <a href="https://danielbaileyoffical.substack.com/subscribe" class="btn btn--accent" target="_blank" rel="noopener">Subscribe Free</a>
+          <a href="https://danielbaileyoffical.substack.com/subscribe" class="btn" target="_blank" rel="noopener">Subscribe free</a>
         </div>
       </div>
     </div>
@@ -422,21 +413,21 @@
           <h3>Creative Nonfiction Editor + Cultural Organizer</h3>
           <p class="writing-card-pub">Blood+Honey Literary Magazine / GonzoFest 2026</p>
           <p>Editing creative nonfiction for clarity, structure, voice, pacing, and reader impact while also helping shape public messaging, contributor communication, and social promotion for a national literary and cultural festival.</p>
-          <a href="https://www.bloodhoneylit.com/daniel-bailey-bio" class="link-arrow" target="_blank" rel="noopener">Read the Blood+Honey bio &rarr;</a>
+          <a href="https://www.bloodhoneylit.com/daniel-bailey-bio" class="link-arrow" target="_blank" rel="noopener">Read the Blood+Honey bio</a>
         </article>
         <article class="writing-card">
           <div class="writing-card-tag">Published Satire</div>
           <h3>I Tried To Obey Every Self Help Video In My Feed For One Day</h3>
           <p class="writing-card-pub">Maudlin House</p>
           <p>One man, one phone, and every piece of advice the algorithm can throw at him in a single day.</p>
-          <a href="https://maudlinhouse.net/i-tried-to-obey-every-self-help-video-in-my-feed-for-one-day/" class="link-arrow" target="_blank" rel="noopener">Read at Maudlin House &rarr;</a>
+          <a href="https://maudlinhouse.net/i-tried-to-obey-every-self-help-video-in-my-feed-for-one-day/" class="link-arrow" target="_blank" rel="noopener">Read at Maudlin House</a>
         </article>
         <article class="writing-card">
           <div class="writing-card-tag">Published Fiction</div>
           <h3>disappear near me</h3>
           <p class="writing-card-pub">Blood+Honey</p>
           <p>&ldquo;I tried to do my literary homework last night but realized I was still sane, which felt like cheating.&rdquo;</p>
-          <a href="https://www.bloodhoneylit.com/fiction/disappear-near-me" class="link-arrow" target="_blank" rel="noopener">Read at Blood+Honey &rarr;</a>
+          <a href="https://www.bloodhoneylit.com/fiction/disappear-near-me" class="link-arrow" target="_blank" rel="noopener">Read at Blood+Honey</a>
         </article>
         <article class="writing-card">
           <div class="writing-card-tag">Interview Work</div>
@@ -457,11 +448,11 @@
           <p>Feature work in development on a photographer whose archive moves through sports, celebrity, music, and Hunter S. Thompson's world.</p>
         </article>
         <article class="writing-card">
-          <div class="writing-card-tag">Book Review</div>
-          <h3>The Curse of Lono</h3>
-          <p class="writing-card-pub">Hunter S. Thompson and Ralph Steadman, reissued</p>
-          <p>A review in two voices of the Simon &amp; Schuster reissue, with a word from Ralph Steadman's daughter.</p>
-          <a href="https://danielbaileyoffical.substack.com/p/the-curse-of-lono-reviewed-from-the" class="link-arrow" target="_blank" rel="noopener">Read the review &rarr;</a>
+          <div class="writing-card-tag">Coming Soon</div>
+          <h3>Scanlan&rsquo;s Magazine</h3>
+          <p class="writing-card-pub">Editor and publisher</p>
+          <p>A new independent magazine of reporting, culture, and argument. The first issue is in preparation.</p>
+          <a href="https://scanlansmagazine.com/" class="link-arrow" target="_blank" rel="noopener">Visit Scanlan&rsquo;s</a>
         </article>
       </div>
     </div>
@@ -546,10 +537,12 @@
   <!-- Contact -->
   <section id="contact" class="section contact" aria-labelledby="contact-title">
     <div class="container">
-      <h2 class="contact-heading" id="contact-title">Work with Daniel</h2>
+      <p class="contact-label">Work with Daniel</p>
+      <div>
+      <h2 class="contact-heading" id="contact-title">The writing should have a pulse. <em>The facts should hold.</em></h2>
       <p class="contact-note">Editing, communications work, interviews and features, publishing projects, music and audio production, and good collaborations of all kinds.</p>
       <div class="contact-links">
-        <a href="mailto:danieloproductions@gmail.com" class="btn btn--large">danieloproductions@gmail.com</a>
+        <a href="mailto:danieloproductions@gmail.com" class="btn">danieloproductions@gmail.com</a>
       </div>
       <ul class="contact-social">
         <li><a href="https://danielbaileyoffical.substack.com/" target="_blank" rel="noopener me">Substack</a></li>
@@ -559,17 +552,23 @@
         <li><a href="https://www.instagram.com/danielbaileyoffical/" target="_blank" rel="noopener me">Instagram</a></li>
         <li><a href="https://soundcloud.com/danielobailey" target="_blank" rel="noopener me">SoundCloud</a></li>
       </ul>
+      </div>
     </div>
   </section>
 
   </main>
 
   <!-- Footer -->
-  <div class="footer-stripes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Daniel O' Bailey</p>
-      <p>Madisonville, Louisiana &middot; <a href="https://danielbaileyoffical.substack.com/feed">RSS</a></p>
+      <div>
+        <a class="footerbrand" href="/">Daniel O&rsquo; Bailey</a>
+        <p class="tag">Writer. Editor. Musician.</p>
+      </div>
+      <div>
+        <p class="fine">Madisonville, Louisiana. Essays and stories on <a href="https://danielbaileyoffical.substack.com/">Substack</a> (<a href="https://danielbaileyoffical.substack.com/feed">RSS</a>). Editor and publisher of <a href="https://scanlansmagazine.com/">Scanlan&rsquo;s Magazine</a>.</p>
+        <p class="fine">&copy; 2026 Daniel O' Bailey.</p>
+      </div>
     </div>
   </footer>
 

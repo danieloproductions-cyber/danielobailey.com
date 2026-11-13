@@ -9,39 +9,29 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#54c2d7">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f4f0e6">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-  <nav class="nav" aria-label="Primary">
-    <a href="/" class="nav-logo">Daniel O' Bailey <small>Stories from Louisiana and beyond</small></a>
-  </nav>
+  <header class="masthead container">
+    <div class="brandrow"><p class="brand"><a href="/">Daniel O&rsquo; Bailey</a></p></div>
+    <nav class="nav" aria-label="Primary"><div class="nav-links"><a href="/">Front page</a><a href="/#latest">Latest</a><a href="/#contact">Contact</a></div></nav>
+  </header>
 
-  <main>
-    <header class="hero notfound">
-      <div class="container hero-inner">
-        <div class="hero-typed">
-          <span class="hero-date">Error 404</span>
-          <h1 class="hero-name"><span>Page</span> <span class="hero-name-pop">Not Found</span></h1>
-          <p class="hero-tagline">That page isn't here. It may have been moved, renamed, or never typed at all.</p>
-          <div class="hero-actions">
-            <a href="/" class="btn btn--accent">Back to the front page</a>
-            <a href="/#latest" class="btn btn--dark">Read the latest</a>
-          </div>
-        </div>
-      </div>
-    </header>
+  <main class="container">
+    <div class="notfound">
+      <p class="eyebrow">Error 404</p>
+      <h1>Not here.</h1>
+      <p>That page may have been moved, renamed, or never typed at all.</p>
+      <a href="/" class="btn">Back to the front page</a>
+    </div>
   </main>
 
-  <div class="footer-stripes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Daniel O' Bailey</p>
-      <p>Madisonville, Louisiana</p>
+      <div><a class="footerbrand" href="/">Daniel O&rsquo; Bailey</a><p class="tag">Writer. Editor. Musician.</p></div>
+      <div><p class="fine">&copy; 2026 Daniel O' Bailey. Madisonville, Louisiana.</p></div>
     </div>
   </footer>
 
