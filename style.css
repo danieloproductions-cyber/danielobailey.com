@@ -209,6 +209,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--red); outline-o
   padding: 28px 24px 30px; border-bottom: 1px solid var(--ink);
 }
 .latest-art img { width: 100%; border: 1px solid var(--ink); background: var(--rule); }
+.latest-art .archive-kicker { flex-wrap: wrap; row-gap: 2px; }
+.latest-art .archive-kicker span { white-space: nowrap; }
 .latest-feature h3 { font: 700 clamp(40px, 5.4vw, 80px)/.92 var(--sans); letter-spacing: -.06em; margin: 14px 0 20px; }
 .feature-sub { font-size: 25px; line-height: 1.35; max-width: 540px; margin-bottom: 14px; }
 .latest-feature .dek { font-size: 18px; line-height: 1.6; max-width: 540px; margin-bottom: 26px; }
