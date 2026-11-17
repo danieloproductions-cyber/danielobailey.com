@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Daniel Bailey">
-  <rect width="64" height="64" fill="#15213b"/>
-  <rect x="0" y="0" width="64" height="6" fill="#ad97cc"/>
-  <path d="M13 16h14.200c11.100 0 18.200 7 18.200 18s-7.100 18-18.200 18H13V16Zm9.600 8.200v19.600h4.100c5.600 0 9-3.700 9-9.800s-3.400-9.800-9-9.800h-4.100Z" fill="#ebe4d3"/>
-  <circle cx="53" cy="47" r="5" fill="#8bb084"/>
+  <rect width="64" height="64" fill="#fbfaf7"/>
+  <rect x="0" y="0" width="64" height="6" fill="#1c1719"/>
+  <path d="M13 16h14.200c11.100 0 18.200 7 18.200 18s-7.100 18-18.200 18H13V16Zm9.600 8.200v19.600h4.100c5.600 0 9-3.700 9-9.800s-3.400-9.800-9-9.800h-4.100Z" fill="#5b22b8"/>
+  <circle cx="53" cy="47" r="5" fill="#8f5214"/>
 </svg>
